@@ -135,7 +135,7 @@ class ClipRewardEnv(gym.RewardWrapper):
 
     def reward(self, reward):
         """Bin reward to {+1, 0, -1} by its sign."""
-        return np.sign(reward)
+        return reward
 
 
 class WarpFrame(gym.ObservationWrapper):
